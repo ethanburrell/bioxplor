@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Arvo|Lato|Vollkorn" rel="stylesheet"><style>
+body {
+  margin: 0;
+  /*font-family: Arial, Helvetica, sans-serif;*/
+
+}
+h1, h2 {
+  font-family: 'Lato', sans-serif;
+}
+
+p {
+  font-family: 'Vollkorn', serif;
+
+}
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #AAABB8;
+  color: black;
+}
+
+.active {
+  /*background-color: #4CAF50;*/
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.header-right {
+  float: right;
+}
+
+.hero-image {
+  background-image: url("images/clouds.jpg");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-text-stroke-width: .25px;
+  -webkit-text-stroke-color: black;
+  color:white;
+}
+
+.container {
+  width:100%;
+  margin: 0px;
+}
+
+.darkblue {
+  background-color:#25264d;
+  color: white;
+}
+* {
+    box-sizing: border-box;
+}
+
+/* Center website */
+.main {
+  /* used to be 1000, max width is now 1200*/
+    max-width: 1200px;
+    margin: auto;
+}
+
+h1 {
+    font-size: 50px;
+    word-break: break-all;
+}
+
+.row {
+    /*margin: 8px -16px;*/
+    margin: 16px -32px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    /*padding: 8px;*/
+    padding: 0 16px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+    float: left;
+    /* change this number for thirds or 4ths */
+    width: 33%;
+}
+
+/* Clear floats after rows */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    background-color: white;
+    padding: 0px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+    }
+}
+
+/*
+======================================
+OVERLAY EFFECT
+=====================================
+*/
+
+.containerimage {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containerimage:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 1.8em;
+}
+.text p {
+  font-size: 1em;
+}
+</style>
+</head>
+<body>
+
+<div class="topnav" id="myTopnav">
+  <a href="#home" class="active" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:46px;"/></a>
+  <div class="header-right">
+    <a href="#news" id="i">About</a>
+    <a href="#contact" id="i">Technology</a>
+    <a href="#about" id="i">Contact</a>
+  </div>
+  <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div class="container hero-image">
+    <h1 style="font-size:50px; text-align:center; padding-top: 100px; padding-bottom: 100px; margin:0px;">About</h1>
+</div>
+
+<div class="container darkblue" style="padding-top:100px; padding-bottom:100px; text-align:center;">
+  <div style="">
+    <h2 style="margin:0; text-align:center;"> About </h2>
+    <h4 style="max-width: 1200px; width:100%; margin: auto;">
+    Our platform allows researchers to quickly comb through large amounts research quickly. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
+  </h4>
+  </div>
+</div>
+
+
+<div class="main">
+  <h1 style="text-align:center;"> Founding Team </h1>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 style="text-align:center;"> Scientific Advisory Board </h1>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<h1 style="text-align:center;"> Advisory Board </h1>
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+      <div class="containerimage">
+        <img src="images/img_avatar.png" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">
+            <h1> John Doe </h1>
+            <p>
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+<!-- END GRID -->
+
+
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+
+</body>
+</html>
