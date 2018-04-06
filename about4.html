@@ -1,0 +1,556 @@
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Lato:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
+
+
+<style>
+body {
+  margin: 0;
+  font-family: Helvetica;
+}
+
+h1, a {
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h5, p {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.sixth {
+  width: 10%;
+}
+
+.mobile-margin {
+  max-width: 1000px;
+  margin: auto;
+  /*
+  padding-left: 10%;
+  padding-right: 10%;
+  */
+  padding-top: 7.5vh;
+  padding-bottom: 7.5vh;
+  width: 80%;
+}
+
+@media screen and (max-width: 800px) {
+  .mobile-margin { width: 90%; padding-top: 3.5vh; padding-bottom: 3.5vh;}
+}
+
+@media screen and (max-width: 480px) {
+  .mobile-margin {
+    width: 100%; padding-top: 0vh; padding-bottom: 0vh;}
+    .sixth {
+      width: 25%;
+    }
+}
+
+.lightgrey {
+  background: #D3D3D3;
+}
+/*
+================================
+Navigation
+================================
+*/
+
+.topnav {
+  overflow: hidden;
+  background-color: white;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.header-right a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right a {
+}
+
+.active {
+  background-color: #4CAF50;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  /*.topnav a:not(:first-child) {display: none;}*/
+  .header-right a {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+    .header-right {
+  float: none;
+}
+}
+
+/*
+=====================================
+Hero Image
+=====================================
+*/
+.hero-image {
+  background-image: url("images/cells.png");
+  height: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  -webkit-text-stroke-width: .001px;
+  /*-webkit-text-stroke-color: white;*/
+  color:black;
+}
+
+/*
+======================================
+OVERLAY EFFECT
+=====================================
+*/
+
+.containerimage {
+  position: relative;
+  width: 100%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #008CBA;
+}
+
+.containerimage:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+.text h1 {
+  margin: 0;
+  padding: 0;
+  /*font-size: 1.5em;*/
+  font-size: 2vw;
+}
+.text p {
+  /*font-size: .8em;*/
+  text-align: left;
+  font-size: .9vw;
+}
+
+.text-margin {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+@media screen and (max-width: 700px) {
+  .w3-third {
+    width: 100%;
+  }
+  .text {left: 50%;}
+  .text h1 {
+    margin: 0;
+    padding: 0;
+    /*font-size: 1.5em;*/
+    font-size: 7vw;
+  }
+  .text p {
+    /*font-size: .8em;*/
+    text-align: left;
+    font-size: 4vw;
+  }
+}
+
+
+</style>
+</head>
+<body>
+  <script>
+  function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+          x.className += " responsive";
+      } else {
+          x.className = "topnav";
+      }
+  }
+  </script>
+  <!-- NAV BAR -->
+  <div class="topnav" id="myTopnav">
+    <a href="#home" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
+    <div class="header-right">
+    <a href="#news">About</a>
+    <a href="#contact">Technology</a>
+    <a href="#about">Contact</a>
+    </div>
+    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+  </div>
+
+
+  <!-- HERO IMAGE -->
+  <div class="container hero-image">
+      <!--<h1 style="font-size:50px; text-align:center; padding-top: 100px; padding-bottom: 100px; margin:0px;">About</h1>-->
+      <h1 style="font-size:50px; text-align:center; padding-top: 150px; padding-bottom: 150px; margin:0px;"> </h1>
+  </div>
+
+  <div class="w3-container w3-white w3-center">
+    <div class="mobile-margin">
+      <h1>
+        Header
+      </h1>
+      <h4>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis posuere eros, sed rutrum nisi mattis eu. Mauris ex sapien, hendrerit sit amet ligula a, euismod faucibus massa. Morbi ac odio vitae dolor elementum fermentum sed eu lacus. Nullam rutrum leo ac pulvinar pellentesque. Fusce id tellus nec lacus sodales viverra. Curabitur vitae mi vitae est rutrum auctor eget a mauris. Nam ex enim, tempor semper elit vitae, cursus lacinia lorem. Quisque nec blandit dui. Nullam id nibh faucibus, fringilla felis luctus, tempor ante. Suspendisse quis ipsum nec urna viverra ultricies. In hac habitasse platea dictumst. Nullam ex nunc, tristique nec neque id, volutpat sagittis urna. Donec consectetur dui eu enim bibendum eleifend.
+      </h4>
+    </div>
+  </div>
+
+  <!-- BIOS -->
+  <div class="w3-container w3-center lightgrey">
+    <div class="mobile-margin">
+      <h1 class="text-margin" style="padding-top: 0px;"> Founding Team </h1>
+
+      <div class="w3-row">
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="text-margin"> Scientific Advisory Board </h1>
+
+      <div class="w3-row">
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br style="line-height: 30px;">
+      <div class="w3-row">
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <h1 class="text-margin"> Advisory Board </h1>
+
+      <div class="w3-row">
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br style="line-height: 30px;">
+      <div class="w3-row">
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="w3-third w3-container">
+          <div class="column">
+            <div class="content">
+              <div class="containerimage">
+                <img src="images/img_avatar.png" alt="Avatar" class="image">
+                <div class="overlay">
+                  <div class="text">
+                    <h1> John Doe </h1>
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+</div>
+
+  <!-- Partners -->
+
+  <div class="mobile-margin" style="text-align:center;">
+    <img class="sixth" src="images/partners/bayer.png" alt=""  />
+    <img class="sixth" src="images/partners/enterprise.png" alt="" />
+    <img class="sixth" src="images/partners/ironfire.png" alt="" />
+    <img class="sixth" src="images/partners/m.png" alt="" />
+    <img class="sixth" src="images/partners/nitro.png" alt="" />
+    <img class="sixth" src="images/partners/skydeck.png" alt="" />
+  </div>
+
+  <!-- Footer -->
+</body>
+</html>
