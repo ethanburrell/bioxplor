@@ -52,6 +52,16 @@ h1, h2, h3, h4, h5, h5, p {
 .lightgrey {
   background: #e4e4e4;/*#D3D3D3;*/
 }
+
+.pad {
+  padding-top: 0px;
+}
+@media screen and (max-width: 600px) {
+  .pad {
+    padding-top: 30px;
+  }
+}
+
 /*
 ================================
 Navigation
@@ -198,7 +208,7 @@ OVERLAY EFFECT
   padding-bottom: 32px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 600px) {
   .w3-third {
     width: 100%;
   }
@@ -215,7 +225,21 @@ OVERLAY EFFECT
     font-size: 4vw;
   }
 }
+/*
+======================================
+Footer
+=====================================
+*/
 
+.footer-format {
+  text-align: left;
+}
+
+@media screen and (max-width: 700px) {
+  .footer-format {
+    text-align: center;
+  }
+}
 
 </style>
 </head>
@@ -282,7 +306,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -299,7 +323,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -338,7 +362,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -355,7 +379,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -373,9 +397,8 @@ OVERLAY EFFECT
           </div>
         </div>
       </div>
-      <br style="line-height: 30px;">
       <div class="w3-row">
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -392,7 +415,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -409,7 +432,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -448,7 +471,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -465,7 +488,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -502,7 +525,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -519,7 +542,7 @@ OVERLAY EFFECT
             </div>
           </div>
         </div>
-        <div class="w3-third w3-container">
+        <div class="w3-third w3-container pad">
           <div class="column">
             <div class="content">
               <div class="containerimage">
@@ -559,7 +582,7 @@ OVERLAY EFFECT
         <div class="w3-quarter">
           <img src="images/XLogo.png" style="max-height: 100px; height:10%;">
         </div>
-        <div class="w3-quarter" style="text-align:left;">
+        <div class="w3-quarter" class="footer-format">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
           About <br>
@@ -568,7 +591,7 @@ OVERLAY EFFECT
           Carrers
           </p>
         </div>
-        <div class="w3-quarter" style="text-align:left;">
+        <div class="w3-quarter" class="footer-format">
           <h4 style="margin:0;"> Learn More </h4>
           <p style="margin:0;">
           Resources <br>
@@ -577,7 +600,7 @@ OVERLAY EFFECT
           Partners
           </p>
         </div>
-        <div class="w3-quarter" style="text-align:left;">
+        <div class="w3-quarter" class="footer-format">
           <h4>
             LinkedIn <br>
             Blog
