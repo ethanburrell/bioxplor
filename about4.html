@@ -32,13 +32,18 @@ h1, h2, h3, h4, h5, h5, p {
   padding-left: 10%;
   padding-right: 10%;
   */
+  /*/
   padding-top: 7.5vh;
   padding-bottom: 7.5vh;
+  */
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   width: 80%;
 }
 
 @media screen and (max-width: 800px) {
-  .mobile-margin { width: 90%; padding-top: 3.5vh; padding-bottom: 3.5vh;}
+  .mobile-margin { width: 90%;
+  /*padding-top: 3.5vh; padding-bottom: 3.5vh;*/}
 }
 
 @media screen and (max-width: 480px) {
@@ -256,9 +261,9 @@ Footer
   </script>
   <!-- NAV BAR -->
   <div class="topnav" id="myTopnav">
-    <a href="#home" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
+    <a href="index.html" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
     <div class="header-right">
-    <a href="#news">About</a>
+    <a href="about4.html">About</a>
     <a href="#contact">Technology</a>
     <a href="#about">Contact</a>
     </div>
@@ -576,9 +581,30 @@ Footer
     <img class="sixth" src="images/partners/skydeck.png" alt="" />
   </div>
 
-  <!-- Footer -->
-
+  <!-- Technology -->
   <div class="w3-container w3-center lightgrey">
+    <div class="mobile-margin">
+      <h1 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Services </h1>
+      <div class="w3-row">
+        <div class="w3-half">
+          <div style="padding: 32px;">
+            <img src="images/img_avatar.png" style="width:100%;"/>
+          </div>
+        </div>
+        <div class="w3-half">
+          <div style="padding: 32px;">
+            <img src="images/img_avatar.png" style="width:100%;"/>
+          </div>
+        </div>
+      </div>
+      <h4>
+        Our platform works at the intersection of Data Mining and Machine learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
+      </h4>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="w3-container w3-center" style="background:#464866; color: white;">
     <div class="mobile-margin" style="padding-top: 30px;">
       <div class="w3-row">
         <div class="w3-quarter">
@@ -587,7 +613,7 @@ Footer
         <div class="w3-quarter" class="footer-format">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
-          About <br>
+          <a href="about4.html">About</a> <br>
           Contact Us <br>
           Press <br>
           Carrers
