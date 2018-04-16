@@ -13,7 +13,7 @@ body {
   font-family: Helvetica;
 }
 
-h1, a, .footer {
+h1, a {
   font-family: 'Lato', sans-serif;
 }
 
@@ -25,34 +25,7 @@ h1, h2, h3, h4, h5, h5, p {
 .sixth {
   width: 10%;
 }
-.mobile-margin-top {
-  max-width: 1000px;
-  margin: auto;
-  /*
-  padding-left: 10%;
-  padding-right: 10%;
-  */
-  /*/
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
-  */
 
-  /*padding-top: 50vh;
-  padding-bottom: 20vh;*/
-  /*vertical-align: middle;
-  line-height: 50%;*/
-/*
-  width: 80%;
-  margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-*/
-line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-}
 .mobile-margin {
   max-width: 1000px;
   margin: auto;
@@ -65,7 +38,7 @@ line-height: 1.5;
   padding-bottom: 7.5vh;
   */
 
-  padding-top: 20vh;
+  padding-top: 10vh;
   padding-bottom: 20vh;
 
   width: 80%;
@@ -105,8 +78,7 @@ Navigation
 
 .topnav {
   overflow: hidden;
-  /*background-color: white;*/
-  background-color: rgba(255,255,255, .25);
+  background-color: white;
 }
 
 .topnav a {
@@ -152,11 +124,6 @@ Navigation
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
-  .topnav {
-    position: relative;
-    /*background-color: rgba(255,255,255, 1);*/
-    z-index: 0;
-  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -179,9 +146,7 @@ Hero Image
 */
 .hero-image {
   background-image: url("images/cells.png");
-  /*height: 100%;*/
-  /*line-height: 100%;*/
-      height: 100%;
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -191,20 +156,6 @@ Hero Image
   color:black;
 }
 
-.hero-image #vertical{
-  text-align: center;
-  padding-top: calc(45vh - 93px);
-}
-
-@media screen and (max-width: 600px) {
-  .hero-image {
-    min-height: 750px;
-  }
-  .hero-image #vertical{
-    text-align: center;
-    padding-top: calc(30vh - 110px);
-  }
-}
 /*
 ======================================
 OVERLAY EFFECT
@@ -311,36 +262,15 @@ Footer
       }
   }
   </script>
-  <div class="container hero-image">
   <!-- NAV BAR -->
   <div class="topnav" id="myTopnav">
-    <a href="index.html" style="padding:2px 24px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
+    <a href="index.html" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
     <div class="header-right">
-    <a href="about.html">About</a>
-    <a href="technology.html">Technology</a>
-    <a href="contact.html">Contact</a>
     </div>
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
 
-  <!-- HERO IMAGE -->
-
-      <!--<h1 style="font-size:50px; text-align:center; padding-top: 100px; padding-bottom: 100px; margin:0px;">About</h1>-->
-      <!--<h1 style="font-size:50px; text-align:center; padding-top: 150px; padding-bottom: 150px; margin:0px;"> </h1>-->
-      <div id="vertical">
-      <div class="mobile-margin-top">
-      <div class="w3-center" style="margin: auto;">
-          <h1>
-            BioXplor is an AI Platform for Life Science Discovery
-          </h1>
-          <h4>
-            “One of the biggest challenges in medicine and science today is how to interpret the vast amount of biological data we are generating.” ~Craig Venter
-          </h4>
-        </div>
-      </div>
-      </div>
-    </div>
 
   <!--
   <div class="w3-container w3-white w3-center">
@@ -355,96 +285,94 @@ Footer
   </div>
   -->
 
-  <!-- Technology -->
-  <div class="w3-container w3-center w3-white">
+  <!-- Contact Form -->
+  <div class="w3-container w3-center">
     <div class="mobile-margin">
-      <h1 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Technology </h1>
-      <h4>
-        Text, Data, and Image mining with Machine Learning
-      </h4>
-      <h4>
-        <a href="technology.html"> Learn more </a>
-      </h4>
-    </div>
-  </div>
+      <h1 style="padding-bottom: 45px;"> Contact Us </h1>
+      <form class="w3-container contact" name="BioXplor Contact Form">
+          <div class="w3-row-padding">
 
-  <!-- Technology -->
-  <div class="w3-container w3-center lightgrey">
-    <div class="mobile-margin">
-      <img src="images/dna.svg" width="75px"/>
-      <h1 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Data Resources </h1>
-      <h3 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Your Data Collections. Our Search. </h3>
-      <h4>
-        Our platform allows researchers to quickly comb through large amounts research quickly. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit
-      </h4>
-      <h4>
-        <a href="services.html"> Learn more </a>
-      </h4>
-    </div>
-  </div>
-
-  <!-- Services -->
-  <div class="w3-container w3-center w3-white">
-    <div class="mobile-margin">
-      <h1 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Services </h1>
-      <div class="w3-row">
         <div class="w3-half">
-          <div style="padding: 32px;">
-            <img src="images/img_avatar.png" style="width:100%;"/>
-          </div>
+          <input class="w3-input w3-border" type="text" placeholder="First Name" required="">
+          <br>
+
         </div>
         <div class="w3-half">
-          <div style="padding: 32px;">
-            <img src="images/img_avatar.png" style="width:100%;"/>
-          </div>
+          <input class="w3-input w3-border" type="text" placeholder="Last Name" required="">
+          <br>
         </div>
       </div>
-      <h4>
-        Our platform works at the intersection of Data Mining and Machine learning. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat,
-      </h4>
-      <h4>
-        <a href="services.html">  Our services </a>
-      </h4>
+          <div class="w3-row-padding">
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Company (Optional)">
+
+            </div>
+            <div class="w3-half">
+              <input class="w3-input w3-border" type="text" placeholder="Role (Optional)">
+              <br>
+            </div>
+          <div class="w3-row-padding">
+              <input class="w3-input w3-border" type="text" placeholder="Email" required="">
+              <br>
+          </div>
+          <div class="w3-row-padding">
+              <select class="w3-select" name="option" required="">
+              <option value="" disabled="" selected="">Choose Option</option>
+              <option value="1">General Info (Keep Me Updated)</option>
+              <option value="2">Customer Inquiry</option>
+              <option value="3">Press Inquiry</option>
+              <option value="4">Other</option>
+              </select>
+          </div>
+          <br>
+      <div class="w3-row-padding">
+              <textarea class="w3-input w3-border" rows="10"  required="">Questions/Comments</textarea> <!-- style="resize:none" -->
+              <br>
+      </div>
+      <div class="w3-row-padding">
+
+              <input type="submit" class="w3-btn w3-left w3-border" value="Send">
+              <br>
+            </div>
+              </div>
+        </form>
     </div>
   </div>
 
   <!-- Footer -->
-  <div class="w3-container w3-center footer" style="background:#464866; color: white;">
+  <div class="w3-container w3-center" style="background:#464866; color: white;">
     <div class="mobile-margin" style="padding-top: 30px;">
       <div class="w3-row">
-        <div class="w3-quarter" style="text-align:left">
+        <div class="w3-quarter">
           <img src="images/XLogo.png" style="max-height: 100px; height:10%;">
         </div>
         <div class="w3-quarter w3-left" class="footer-format">
-          <div style="text-align:left">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
-          <a href="about.html">About</a> <br>
-          <a href="contact.html">Contact Us</a> <br>
-          <a href="press.html"> Press</a> <br>
+          <a href="about4.html">About</a> <br>
+          Contact Us <br>
+          Press <br>
           <a href="https://www.linkedin.com/jobs/search/?f_C=18014549"> Carrers </a>
           </p>
         </div>
+        <div class="w3-quarter" class="footer-format">
+          <h4 style="margin:0;"> Learn More </h4>
+          <p style="margin:0;">
+          Resources <br>
+          Services <br>
+          User Feedback <br>
+          Partners
+          </p>
         </div>
         <div class="w3-quarter" class="footer-format">
-          <div style="text-align:left">
-            <h4 style="margin:0;"> Learn More </h4>
-            <p style="margin:0;">
-            Resources <br>
-            Services <br>
-            </p>
-          </div>
-        </div>
-        <div class="w3-quarter" class="footer-format">
-          <h4 style="text-align:left">
+          <h4>
             <a href="https://www.linkedin.com/company/18014549/" style="text-decoration: none"><i class="fab fa-linkedin-in"></i> </a>
-            &nbsp;&nbsp;
             <a href="" style="text-decoration: none"><i class="fas fa-rss"></i></a>
           </h4>
         </div>
       </div>
     </div>
-    <br><br><br>
+    <br><br><br><br><br>
   </div>
 </body>
 </html>
