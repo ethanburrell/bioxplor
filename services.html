@@ -13,7 +13,7 @@ body {
   font-family: Helvetica;
 }
 
-h1, a, .footer {
+h1, a, .footer, .footer a, .footer-format {
   font-family: 'Lato', sans-serif;
 }
 
@@ -23,36 +23,12 @@ h1, h2, h3, h4, h5, h5, p {
 }
 
 .sixth {
-  width: 10%;
+  /*width: 10%;*/
+  width: 12%;
+  padding-left: 8px;
+  padding-right: 8px;
 }
-.mobile-margin-top {
-  max-width: 1000px;
-  margin: auto;
-  /*
-  padding-left: 10%;
-  padding-right: 10%;
-  */
-  /*/
-  padding-top: 7.5vh;
-  padding-bottom: 7.5vh;
-  */
 
-  /*padding-top: 50vh;
-  padding-bottom: 20vh;*/
-  /*vertical-align: middle;
-  line-height: 50%;*/
-/*
-  width: 80%;
-  margin: 0;
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
-*/
-line-height: 1.5;
-    display: inline-block;
-    vertical-align: middle;
-}
 .mobile-margin {
   max-width: 1000px;
   margin: auto;
@@ -64,10 +40,8 @@ line-height: 1.5;
   padding-top: 7.5vh;
   padding-bottom: 7.5vh;
   */
-
-  padding-top: 20vh;
-  padding-bottom: 20vh;
-
+  padding-top: 15vh;
+  padding-bottom: 15vh;
   width: 80%;
 }
 
@@ -105,8 +79,7 @@ Navigation
 
 .topnav {
   overflow: hidden;
-  /*background-color: white;*/
-  background-color: rgba(255,255,255, .25);
+  background-color: white;
 }
 
 .topnav a {
@@ -152,11 +125,6 @@ Navigation
 
 @media screen and (max-width: 600px) {
   .topnav.responsive {position: relative;}
-  .topnav {
-    position: relative;
-    /*background-color: rgba(255,255,255, 1);*/
-    z-index: 0;
-  }
   .topnav.responsive .icon {
     position: absolute;
     right: 0;
@@ -179,9 +147,7 @@ Hero Image
 */
 .hero-image {
   background-image: url("images/cells.png");
-  /*height: 100%;*/
-  /*line-height: 100%;*/
-      height: 100%;
+  height: 50%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -190,98 +156,35 @@ Hero Image
   /*-webkit-text-stroke-color: white;*/
   color:black;
 }
-
-.hero-image #vertical{
-  text-align: center;
-  padding-top: calc(45vh - 93px);
-}
-
-@media screen and (max-width: 600px) {
-  .hero-image {
-    min-height: 750px;
-  }
-  .hero-image #vertical{
-    text-align: center;
-    padding-top: calc(30vh - 110px);
-  }
-}
 /*
 ======================================
-OVERLAY EFFECT
+Header Images
 =====================================
 */
-
-.containerimage {
+.header {
+  width: 100%;
+  /*
+  padding-top: calc((100vh - (49.5vh + 53px))/4);
+  padding-bottom: calc((100vh - (49.5vh + 53px))/4);
+  */
   position: relative;
-  width: 100%;
+  height: calc((100vh - (49.5vh + 53px)));
+  margin: auto;
+  text-align: center;
+  /*
+  padding-top: calc(((49.5vh + 53px))/4);
+  padding-bottom: calc(((49.5vh + 53px))/4);
+  */
 }
 
-.image {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: #008CBA;
-}
-
-.containerimage:hover .overlay {
-  opacity: 1;
-}
-
-.text {
-  color: white;
+.header .text {
+  color: black;
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
-}
-.text h1 {
-  margin: 0;
-  padding: 0;
-  /*font-size: 1.5em;*/
-  font-size: 2vw;
-}
-.text p {
-  /*font-size: .8em;*/
-  text-align: left;
-  font-size: .9vw;
+  transform: translateY(-50%);
 }
 
-.text-margin {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
-@media screen and (max-width: 600px) {
-  .w3-third {
-    width: 100%;
-  }
-  .text {left: 50%;}
-  .text h1 {
-    margin: 0;
-    padding: 0;
-    /*font-size: 1.5em;*/
-    font-size: 7vw;
-  }
-  .text p {
-    /*font-size: .8em;*/
-    text-align: left;
-    font-size: 4vw;
-  }
-}
 /*
 ======================================
 Footer
@@ -291,14 +194,13 @@ Footer
   padding-left: 100px
 }
 
-.footer-format {
-  text-align: left;
-}
-
 .footer a {
   text-decoration: none;
 }
 
+.footer-format {
+  text-align: left;
+}
 .icons {
   float:right;
 }
@@ -338,62 +240,37 @@ Footer
     <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
   </div>
 
-  <!-- PRESS -->
-  <div class="mobile-margin" style="padding-top:40px;">
 
-    <a href="https://www.siliconrepublic.com/start-ups/life-sciences-startups-ireland" style="text-decoration: none;">
-    <div class="w3-border w3-round">
-      <div style="padding-left: 16px; padding-right: 16px;">
-        <p style="margin:0"> hiswai </p>
-        <small> <p style="margin:0"> Febuary 25, 2018 </p> </small>
-      <h3> SkyDeck Reaches $24m Fundraising Heights </h3>
-      <h5> SkyDeck, the accelerator of University of California (UC) Berkeley, closed a $24m oversubscribed fund on Friday with commitments from VC firms Sequoia Capital and Mayfair Venture Capital. E-commerce group Alibaba and assorted alumni, through various investment vehicles, also provided capital to... </h5>
-    </div>
-    </div> </a>
-    <br> <br> <br>
-
-    <a href="https://www.siliconrepublic.com/start-ups/life-sciences-startups-ireland" style="text-decoration: none;">
-    <div class="w3-border w3-round">
-      <div style="padding-left: 16px; padding-right: 16px;">
-        <p style="margin:0"> Silicon Republic </p>
-        <small> <p style="margin:0"> May 31, 2017 </p> </small>
-      <h3> Bioxplor aims to help scientists improve experiment reproduction </h3>
-      <img src="https://www.siliconrepublic.com/wp-content/uploads/2017/05/life_sciences_shutterstock_139235654-718x523.jpg">
-      <h5> Bioxplor is an AI-driven metasearch and community platform for life sciences research and development (R&D) tools and outsourcing. The company’s information engine works to understand millions of data points and predictive signals to help scientists explore experimental data, collaborate, and evaluate and order the products and services used to perform their next experiment. </h5>
+  <!-- HERO IMAGE -->
+  <div class="container hero-image">
+      <!--<h1 style="font-size:50px; text-align:center; padding-top: 100px; padding-bottom: 100px; margin:0px;">About</h1>-->
+      <div class="mobile-margin">
+      <div class="w3-center" style="margin: auto;">
+          <h1>
+            Services
+          </h1>
+        </div>
   </div>
-    </div> </a>
-    <br> <br> <br>
-
-  <a href="https://www.irishtimes.com/business/innovation/bioxplor-aims-to-help-scientists-improve-experiment-reproduction-1.3033868" style="text-decoration: none;">
-  <div class="w3-border w3-round">
-    <div style="padding-left: 16px;">
-      <p style="margin:0"> Irish Times </p>
-      <small> <p style="margin:0"> Apr 13, 2017 </p> </small>
-    </div>
-    <h3 style="padding-left: 16px;"> Bioxplor aims to help scientists improve experiment reproduction </h3>
-    <img src="https://www.irishtimes.com/polopoly_fs/1.3046851.1492097388!/image/image.jpg_gen/derivatives/box_620_330/image.jpg">
-    <h5 style="padding: 16px;"> The average cost of developing a successful new drug is about $2.6 billion. That’s an increase of 145 per cent over the last 15 years and the figure is continuing to rise, not least because the current rate of attrition on phase-one drug developments is over 95 per cent. One of the main reasons why is the low reproducibility of scientific experiments... </h5>
-  </div> </a>
-  <br> <br> <br>
-
-  <a href="https://www.startupvalley.news/de/merck-empfaengt-10-startups-im-neuen-innovation-center/" style="text-decoration: none;">
-  <div class="w3-border w3-round">
-    <div style="padding-left: 16px; padding-right: 16px;">
-      <p style="margin:0"> Startup Valley </p>
-      <small> <p style="margin:0"> March 21, 2017 </p> </small>
-    <h3> Bioxplor aims to help scientists improve experiment reproduction </h3>
-    <img src="https://www.startupvalley.news/de/wp-content/uploads/sites/2/2018/03/Accelerator-Startups_-Merck-Darmstadt-Germany.jpg">
 </div>
-  </div> </a>
-  <br> <br> <br>
 
-
-
+<!-- Services Text-->
+  <div class="w3-container w3-white w3-center" style="">
+    <div class="header text" >
+      <div class="mobile-margin" style="padding-top: 0px; padding-bottom: 0px;">
+      <h1>
+        About
+      </h1>
+      <h4>
+        BioXplor is an AI platform for life science discovery. The in silico
+        discovery platform is built on the intersection of big data, artificial
+        intelligence, and high-performance computing. The data platform accelerates
+        knowledge generation and novel predictions from structured and unstructured
+        life science data. The platform is optimized for drug repurposing, experiment
+        design, biomarker and drug target identification.
+      </h4>
+      </div>
+    </div>
   </div>
-
-  <br>
-
-
 
   <!-- Footer -->
   <div class="w3-container w3-left footer" style="background:#464866; color: white; width:100%;">

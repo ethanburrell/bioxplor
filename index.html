@@ -13,7 +13,7 @@ body {
   font-family: Helvetica;
 }
 
-h1, a, .footer {
+h1, a, .footer, .footer a, .footer-format {
   font-family: 'Lato', sans-serif;
 }
 
@@ -85,7 +85,7 @@ line-height: 1.5;
 }
 
 .lightgrey {
-  background: #e4e4e4;/*#D3D3D3;*/
+  background: #f1f1f1;/*#e4e4e4;*//*#D3D3D3;*/
 }
 
 .pad {
@@ -106,7 +106,7 @@ Navigation
 .topnav {
   overflow: hidden;
   /*background-color: white;*/
-  background-color: rgba(255,255,255, .25);
+  background-color: rgba(241,241,241, .6);
 }
 
 .topnav a {
@@ -287,14 +287,29 @@ OVERLAY EFFECT
 Footer
 =====================================
 */
+.footer {
+  padding-left: 100px;
+}
+
+.footer a {
+  text-decoration: none;
+}
 
 .footer-format {
   text-align: left;
 }
-
+.icons {
+  float:right;
+}
 @media screen and (max-width: 700px) {
   .footer-format {
     text-align: center;
+  }
+  .footer {
+    padding-left: 16px;
+  }
+  .icons {
+    float:left;
   }
 }
 
@@ -331,11 +346,11 @@ Footer
       <div id="vertical">
       <div class="mobile-margin-top">
       <div class="w3-center" style="margin: auto;">
-          <h1>
+          <h1 style="font-size: 2.7em;">
             BioXplor is an AI Platform for Life Science Discovery
           </h1>
-          <h4>
-            “One of the biggest challenges in medicine and science today is how to interpret the vast amount of biological data we are generating.” ~Craig Venter
+          <h4 style="padding-top: 25px;">
+            “One of the biggest challenges in medicine and science today is how to interpret the vast amount of biological data we are generating.” Craig Venter
           </h4>
         </div>
       </div>
@@ -385,7 +400,7 @@ Footer
 
   <!-- Services -->
   <div class="w3-container w3-center w3-white">
-    <div class="mobile-margin">
+    <div class="mobile-margin" style="padding-top: 70px">
       <h1 class="text-margin" style="padding-top: 0px;padding-bottom: 0px;"> Services </h1>
       <div class="w3-row">
         <div class="w3-half">
@@ -407,15 +422,28 @@ Footer
       </h4>
     </div>
   </div>
+  <!-- Partners -->
+
+  <div class="lightgrey">
+  <div class="mobile-margin" style="width:100%;text-align:center; padding-top:30px;padding-bottom:60px;">
+    <h1> Partners </h1>
+    <img class="sixth" src="images/partners/ironfire.png" alt="" />
+    <img class="sixth" src="images/partners/bayer.png" alt=""  />
+    <img class="sixth" src="images/partners/merck.png" alt="" />
+    <img class="sixth" src="images/partners/nitro.png" alt="" />
+    <img class="sixth" src="images/partners/skydeck.png" alt="" />
+  </div>
+  </div>
+
 
   <!-- Footer -->
-  <div class="w3-container w3-center footer" style="background:#464866; color: white;">
-    <div class="mobile-margin" style="padding-top: 30px;">
+  <div class="w3-container w3-left footer" style="background:#464866; color: white; width:100%;">
+    <div class="mobile-margin w3-left" style="padding-top: 30px;">
       <div class="w3-row">
         <div class="w3-quarter" style="text-align:left">
-          <img src="images/XLogo.png" style="max-height: 100px; height:10%;">
+          <img src="images/XLogo.png" style="max-height: 200px; height:12%;">
         </div>
-        <div class="w3-quarter w3-left" class="footer-format">
+        <div class="w3-quarter w3-left footer-format">
           <div style="text-align:left">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
@@ -426,16 +454,19 @@ Footer
           </p>
         </div>
         </div>
-        <div class="w3-quarter" class="footer-format">
+        <div class="w3-quarter footer-format">
           <div style="text-align:left">
-            <h4 style="margin:0;"> Learn More </h4>
+            <h4 style="margin:0;"> Learn More</h4>
             <p style="margin:0;">
-            Resources <br>
-            Services <br>
+            <a href="resources.html"> Resources</a> <br>
+            <a href="services.html"> Services</a>
+            <br>
             </p>
           </div>
         </div>
-        <div class="w3-quarter" class="footer-format">
+        <div class="w3-quarter">
+        </div>
+        <div class="footer-format icons">
           <h4 style="text-align:left">
             <a href="https://www.linkedin.com/company/18014549/" style="text-decoration: none"><i class="fab fa-linkedin-in"></i> </a>
             &nbsp;&nbsp;

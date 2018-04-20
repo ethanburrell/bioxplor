@@ -8,6 +8,13 @@
 
 
 <style>
+select {
+  color: #767676;
+}
+textarea {
+  color: #767676;
+}
+
 body {
   margin: 0;
   font-family: Helvetica;
@@ -238,14 +245,29 @@ OVERLAY EFFECT
 Footer
 =====================================
 */
+.footer {
+  padding-left: 100px
+}
+
+.footer a {
+  text-decoration: none;
+}
 
 .footer-format {
   text-align: left;
 }
-
+.icons {
+  float:right;
+}
 @media screen and (max-width: 700px) {
   .footer-format {
     text-align: center;
+  }
+  .footer {
+    padding-left: 16px;
+  }
+  .icons {
+    float:left;
   }
 }
 
@@ -264,10 +286,7 @@ Footer
   </script>
   <!-- NAV BAR -->
   <div class="topnav" id="myTopnav">
-    <a href="index.html" style="padding:2px 2px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
-    <div class="header-right">
-    </div>
-    <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+    <a href="index.html" style="padding:2px 24px;"><img src="images/bioxplor-logo.png" style="height:44px;"/></a>
   </div>
 
 
@@ -340,39 +359,45 @@ Footer
   </div>
 
   <!-- Footer -->
-  <div class="w3-container w3-center" style="background:#464866; color: white;">
-    <div class="mobile-margin" style="padding-top: 30px;">
+  <div class="w3-container w3-left footer" style="background:#464866; color: white; width:100%;">
+    <div class="mobile-margin w3-left" style="padding-top: 30px;">
       <div class="w3-row">
-        <div class="w3-quarter">
-          <img src="images/XLogo.png" style="max-height: 100px; height:10%;">
+        <div class="w3-quarter" style="text-align:left">
+          <img src="images/XLogo.png" style="max-height: 200px; height:12%;">
         </div>
-        <div class="w3-quarter w3-left" class="footer-format">
+        <div class="w3-quarter w3-left footer-format">
+          <div style="text-align:left">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
-          <a href="about4.html">About</a> <br>
-          Contact Us <br>
-          Press <br>
+          <a href="about.html">About</a> <br>
+          <a href="contact.html">Contact Us</a> <br>
+          <a href="press.html"> Press</a> <br>
           <a href="https://www.linkedin.com/jobs/search/?f_C=18014549"> Carrers </a>
           </p>
         </div>
-        <div class="w3-quarter" class="footer-format">
-          <h4 style="margin:0;"> Learn More </h4>
-          <p style="margin:0;">
-          Resources <br>
-          Services <br>
-          User Feedback <br>
-          Partners
-          </p>
         </div>
-        <div class="w3-quarter" class="footer-format">
-          <h4>
+        <div class="w3-quarter footer-format">
+          <div style="text-align:left">
+            <h4 style="margin:0;"> Learn More</h4>
+            <p style="margin:0;">
+            <a href="resources.html"> Resources</a> <br>
+            <a href="services.html"> Services</a>
+            <br>
+            </p>
+          </div>
+        </div>
+        <div class="w3-quarter">
+        </div>
+        <div class="footer-format icons">
+          <h4 style="text-align:left">
             <a href="https://www.linkedin.com/company/18014549/" style="text-decoration: none"><i class="fab fa-linkedin-in"></i> </a>
+            &nbsp;&nbsp;
             <a href="" style="text-decoration: none"><i class="fas fa-rss"></i></a>
           </h4>
         </div>
       </div>
     </div>
-    <br><br><br><br><br>
+    <br><br><br>
   </div>
 </body>
 </html>

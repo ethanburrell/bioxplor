@@ -13,7 +13,7 @@ body {
   font-family: Helvetica;
 }
 
-h1, a {
+h1, a, .footer, .footer a, .footer-format {
   font-family: 'Lato', sans-serif;
 }
 
@@ -23,7 +23,10 @@ h1, h2, h3, h4, h5, h5, p {
 }
 
 .sixth {
-  width: 10%;
+  /*width: 10%;*/
+  width: 12%;
+  padding-left: 8px;
+  padding-right: 8px;
 }
 
 .mobile-margin {
@@ -153,6 +156,32 @@ Hero Image
   /*-webkit-text-stroke-color: white;*/
   color:black;
 }
+/*
+======================================
+Header Images
+=====================================
+*/
+.header {
+  width: 100%;
+  /*
+  padding-top: calc((100vh - (49.5vh + 53px))/4);
+  padding-bottom: calc((100vh - (49.5vh + 53px))/4);
+  */
+  position: relative;
+  height: calc((100vh - (49.5vh + 53px)));
+  margin: auto;
+  /*
+  padding-top: calc(((49.5vh + 53px))/4);
+  padding-bottom: calc(((49.5vh + 53px))/4);
+  */
+}
+
+.header .text {
+  color: black;
+  width:100%;
+  position: absolute;
+top: 50%;
+}
 
 /*
 ======================================
@@ -236,14 +265,29 @@ OVERLAY EFFECT
 Footer
 =====================================
 */
+.footer {
+  padding-left: 100px
+}
+
+.footer a {
+  text-decoration: none;
+}
 
 .footer-format {
   text-align: left;
 }
-
+.icons {
+  float:right;
+}
 @media screen and (max-width: 700px) {
   .footer-format {
     text-align: center;
+  }
+  .footer {
+    padding-left: 16px;
+  }
+  .icons {
+    float:left;
   }
 }
 
@@ -282,15 +326,22 @@ Footer
           </h1>
         </div>
   </div>
-
+</div>
   <div class="w3-container w3-white w3-center">
-    <div class="mobile-margin">
+    <div class="header">
+      <div class="text mobile-margin" style="padding-top: 0px; padding-bottom: 0px;">
       <h1>
-        Header
+        About
       </h1>
       <h4>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis posuere eros, sed rutrum nisi mattis eu. Mauris ex sapien, hendrerit sit amet ligula a, euismod faucibus massa. Morbi ac odio vitae dolor elementum fermentum sed eu lacus. Nullam rutrum leo ac pulvinar pellentesque. Fusce id tellus nec lacus sodales viverra. Curabitur vitae mi vitae est rutrum auctor eget a mauris. Nam ex enim, tempor semper elit vitae, cursus lacinia lorem. Quisque nec blandit dui. Nullam id nibh faucibus, fringilla felis luctus, tempor ante. Suspendisse quis ipsum nec urna viverra ultricies. In hac habitasse platea dictumst. Nullam ex nunc, tristique nec neque id, volutpat sagittis urna. Donec consectetur dui eu enim bibendum eleifend.
+        BioXplor is an AI platform for life science discovery. The in silico
+        discovery platform is built on the intersection of big data, artificial
+        intelligence, and high-performance computing. The data platform accelerates
+        knowledge generation and novel predictions from structured and unstructured
+        life science data. The platform is optimized for drug repurposing, experiment
+        design, biomarker and drug target identification.
       </h4>
+      </div>
     </div>
   </div>
 
@@ -579,23 +630,21 @@ Footer
 
   <div class="mobile-margin" style="text-align:center; padding-top:30px;padding-bottom:60px;">
     <h1> Partners </h1>
-    <img class="sixth" src="images/partners/bayer.png" alt=""  />
-    <img class="sixth" src="images/partners/enterprise.png" alt="" />
     <img class="sixth" src="images/partners/ironfire.png" alt="" />
-    <img class="sixth" src="images/partners/m.png" alt="" />
+    <img class="sixth" src="images/partners/bayer.png" alt=""  />
+    <img class="sixth" src="images/partners/merck.png" alt="" />
     <img class="sixth" src="images/partners/nitro.png" alt="" />
     <img class="sixth" src="images/partners/skydeck.png" alt="" />
   </div>
 
   <!-- Footer -->
-  <!-- Footer -->
-  <div class="w3-container w3-center footer" style="background:#464866; color: white;">
-    <div class="mobile-margin" style="padding-top: 30px;">
+  <div class="w3-container w3-left footer" style="background:#464866; color: white; width:100%;">
+    <div class="mobile-margin w3-left" style="padding-top: 30px;">
       <div class="w3-row">
         <div class="w3-quarter" style="text-align:left">
-          <img src="images/XLogo.png" style="max-height: 100px; height:10%;">
+          <img src="images/XLogo.png" style="max-height: 200px; height:12%;">
         </div>
-        <div class="w3-quarter w3-left" class="footer-format">
+        <div class="w3-quarter w3-left footer-format">
           <div style="text-align:left">
           <h4 style="margin:0;"> Company </h4>
           <p style="margin:0;">
@@ -606,16 +655,19 @@ Footer
           </p>
         </div>
         </div>
-        <div class="w3-quarter" class="footer-format">
+        <div class="w3-quarter footer-format">
           <div style="text-align:left">
-            <h4 style="margin:0;"> Learn More </h4>
+            <h4 style="margin:0;"> Learn More</h4>
             <p style="margin:0;">
-            Resources <br>
-            Services <br>
+            <a href="resources.html"> Resources</a> <br>
+            <a href="services.html"> Services</a>
+            <br>
             </p>
           </div>
         </div>
-        <div class="w3-quarter" class="footer-format">
+        <div class="w3-quarter">
+        </div>
+        <div class="footer-format icons">
           <h4 style="text-align:left">
             <a href="https://www.linkedin.com/company/18014549/" style="text-decoration: none"><i class="fab fa-linkedin-in"></i> </a>
             &nbsp;&nbsp;
